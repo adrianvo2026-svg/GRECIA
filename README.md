@@ -3,5 +3,5 @@ Una vez finalizada la página, procedí a subir el proyecto a GitHub y a publica
 Mi sitio web resultante puede visitarse en el siguiente enlace:
 <a href="https://adrianvo2026-svg.github.io/GRECIA/" target="_blank">https://adrianvo2026-svg.github.io/GRECIA/
 </a>
-Esta actividad permitió combinar habilidades de diseño web con la gestión de proyectos digitales, reforzando tanto la creatividad como la capacidad técnica en el desarrollo y publicación de contenido en línea.
+Esta actividad me permitió combinar habilidades de diseño web con la gestión de proyectos digitales, reforzando tanto la creatividad como la capacidad técnica en el desarrollo y publicación de contenido en línea.
 
