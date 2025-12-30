@@ -1,9 +1,213 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-  <title>ADRIANWEB</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Viaje - Grecia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Lato:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:Lato,sans-serif;background:linear-gradient(135deg,#1e5799,#2989d8,#7db9e8);color:#333;line-height:1.6}
+        .container{max-width:1200px;margin:0 auto;background:#fff;box-shadow:0 0 50px rgba(0,0,0,.3)}
+        header{background:linear-gradient(135deg,#0d47a1,#1976d2);color:#fff;text-align:center;padding:60px 20px}
+        h1{font-family:Cinzel,serif;font-size:3em;text-shadow:2px 2px 4px rgba(0,0,0,.3)}
+        nav{background:#f8f9fa;padding:20px;position:sticky;top:0;z-index:100;text-align:center;border-bottom:3px solid #0066cc}
+        nav a{color:#0066cc;text-decoration:none;padding:8px 16px;margin:5px;display:inline-block;border-radius:5px;transition:.3s;font-weight:600}
+        nav a:hover{background:#0066cc;color:#fff}
+        .content{padding:40px 20px}
+        h2{font-family:Cinzel,serif;color:#0d47a1;font-size:2em;margin:40px 0 20px;padding-bottom:10px;border-bottom:3px solid #1976d2}
+        .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;margin:30px 0}
+        .grid-item{background:linear-gradient(135deg,#e3f2fd,#bbdefb);padding:25px;border-radius:10px;text-align:center;transition:.3s}
+        .grid-item:hover{transform:translateY(-5px)}
+        .card{background:#f8f9fa;padding:25px;margin:20px 0;border-radius:10px;border-left:5px solid #1976d2}
+        ul{margin-left:20px;margin-top:10px}
+        .img-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:25px;margin:30px 0}
+        .img-box{position:relative;border-radius:15px;overflow:hidden;cursor:pointer;transition:.3s}
+        .img-box:hover{transform:scale(1.05)}
+        .img-box img{width:100%;height:300px;object-fit:cover}
+        .img-caption{position:absolute;bottom:0;left:0;right:0;background:rgba(13,71,161,.9);color:#fff;padding:15px;text-align:center;font-weight:700}
+        .hero-img{width:100%;height:400px;object-fit:cover;border-radius:15px;margin:30px 0}
+        .interactive{background:linear-gradient(135deg,#e3f2fd,#bbdefb);padding:40px;border-radius:15px;margin:40px 0;text-align:center}
+        input{padding:15px;width:80%;max-width:500px;border:2px solid #1976d2;border-radius:10px;font-size:1.1em;margin:15px 0}
+        button{background:#1976d2;color:#fff;border:none;padding:15px 40px;border-radius:10px;font-size:1em;cursor:pointer;margin:10px;font-weight:700;transition:.3s}
+        button:hover{background:#0d47a1;transform:translateY(-2px)}
+        #display{margin-top:20px;font-size:1.3em;font-weight:700;color:#0d47a1;min-height:30px}
+        .boat{position:fixed;width:100px;height:60px;bottom:20px;animation:sail 15s linear infinite;z-index:1000;font-size:50px}
+        @keyframes sail{0%{left:-150px}100%{left:100%}}
+        .links{background:#f8f9fa;padding:30px;border-radius:10px;margin:40px 0;text-align:center}
+        .ext-link{display:inline-block;color:#fff;background:#1976d2;text-decoration:none;padding:12px 25px;border-radius:8px;margin:10px;font-weight:600;transition:.3s}
+        .ext-link:hover{background:#0d47a1;transform:translateY(-2px)}
+        footer{background:linear-gradient(135deg,#0d47a1,#1976d2);color:#fff;text-align:center;padding:30px}
+        footer a{color:#bbdefb;text-decoration:none}
+        @media(max-width:768px){h1{font-size:2em}h2{font-size:1.5em}.hero-img{height:250px}input{width:100%}}
+    </style>
 </head>
-
 <body>
-  <h1>ADRIANWEB</h1>
+    <div class="boat">⛵</div>
+    <div class="container">
+        <header>
+            <h1>🏛️ Descubre Grecia 🏛️</h1>
+            <p>Tu guía completa para explorar la cuna de la civilización occidental</p>
+        </header>
+
+        <nav>
+            <a href="#intro">Introducción</a>
+            <a href="#galeria">Galería</a>
+            <a href="#lugares">Lugares</a>
+            <a href="#comida">Gastronomía</a>
+            <a href="#actividades">Actividades</a>
+            <a href="#cultura">Cultura</a>
+            <a href="#consejos">Consejos</a>
+            <a href="#planifica">Planifica</a>
+        </nav>
+
+        <div class="content">
+            <h2 id="intro">¿Por qué visitar Grecia?</h2>
+            <p>Grecia combina historia milenaria, paisajes mediterráneos, playas de ensueño y gastronomía deliciosa. Desde las ruinas de Atenas hasta las islas del Egeo, cada rincón cuenta una historia.</p>
+
+            <img src="https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?w=1200" alt="Vista del Partenón en Atenas" class="hero-img">
+
+            <div class="grid">
+                <div class="grid-item"><h4>🏛️ Historia</h4><p>Cuna de la democracia y filosofía</p></div>
+                <div class="grid-item"><h4>🏖️ Playas</h4><p>Aguas cristalinas paradisíacas</p></div>
+                <div class="grid-item"><h4>🍽️ Gastronomía</h4><p>Dieta mediterránea auténtica</p></div>
+                <div class="grid-item"><h4>🌅 Paisajes</h4><p>Puestas de sol inolvidables</p></div>
+            </div>
+
+            <h2 id="galeria">Galería Interactiva</h2>
+            <p style="text-align:center;margin-bottom:20px"><strong>Haz clic en las imágenes para ver diferentes vistas</strong></p>
+            <div class="img-gallery">
+                <div class="img-box" onclick="toggle(this.firstElementChild,'https://images.unsplash.com/photo-1555993539-1732b0258235?w=500','https://images.unsplash.com/photo-1603565816030-6b389eeb23cb?w=500')">
+                    <img src="https://images.unsplash.com/photo-1555993539-1732b0258235?w=500" alt="Acrópolis">
+                    <div class="img-caption">Acrópolis de Atenas</div>
+                </div>
+                <div class="img-box" onclick="toggle(this.firstElementChild,'https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=500','https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?w=500')">
+                    <img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=500" alt="Santorini">
+                    <div class="img-caption">Santorini</div>
+                </div>
+            </div>
+
+            <h2 id="lugares">Lugares Imprescindibles</h2>
+            <div class="card">
+                <h3>🏛️ Atenas</h3>
+                <p><strong>La Acrópolis:</strong> Visita el Partenón y el Erecteion. <strong>Plaka:</strong> Barrio antiguo con tabernas tradicionales. <strong>Museo Arqueológico:</strong> Mejor colección de arte griego del mundo.</p>
+            </div>
+            <div class="card">
+                <h3>🌊 Santorini</h3>
+                <p>Casas blancas con cúpulas azules, acantilados volcánicos y las mejores puestas de sol en Oia. Playas de arena roja y negra.</p>
+            </div>
+            <div class="card">
+                <h3>🎉 Mykonos</h3>
+                <p>Vida nocturna vibrante, molinos de viento icónicos y playas hermosas. Explora la Pequeña Venecia.</p>
+            </div>
+            <div class="card">
+                <h3>⛰️ Meteora</h3>
+                <p>Monasterios bizantinos sobre formaciones rocosas. Patrimonio de la Humanidad UNESCO.</p>
+            </div>
+
+            <h2 id="comida">Gastronomía Griega</h2>
+            <div class="card">
+                <h3>🥗 Platos Esenciales</h3>
+                <ul>
+                    <li><strong>Moussaka:</strong> Berenjena, carne y bechamel</li>
+                    <li><strong>Souvlaki:</strong> Brochetas a la parrilla</li>
+                    <li><strong>Gyros:</strong> Carne en pan pita con tzatziki</li>
+                    <li><strong>Tzatziki:</strong> Yogur con pepino y ajo</li>
+                    <li><strong>Spanakopita:</strong> Pastel de espinacas y feta</li>
+                    <li><strong>Baklava:</strong> Hojaldre con nueces y miel</li>
+                </ul>
+            </div>
+
+            <h2 id="actividades">Actividades</h2>
+            <div class="card">
+                <h3>🏊 Experiencias</h3>
+                <ul>
+                    <li>Buceo y snorkel en aguas cristalinas</li>
+                    <li>Senderismo en Samaria (Creta) y Meteora</li>
+                    <li>Tours por sitios arqueológicos</li>
+                    <li>Clases de cocina griega</li>
+                    <li>Paseos en barco entre islas</li>
+                    <li>Degustación de vinos locales</li>
+                </ul>
+            </div>
+
+            <h2 id="cultura">Cultura y Tradiciones</h2>
+            <div class="card">
+                <h3>🗣️ Frases Útiles</h3>
+                <ul>
+                    <li><strong>Kalimera:</strong> Buenos días</li>
+                    <li><strong>Efharisto:</strong> Gracias</li>
+                    <li><strong>Parakalo:</strong> Por favor</li>
+                    <li><strong>Yamas:</strong> ¡Salud!</li>
+                </ul>
+            </div>
+
+            <h2 id="consejos">Consejos Prácticos</h2>
+            <div class="card">
+                <h3>📅 Mejor Época</h3>
+                <p><strong>Primavera/Otoño:</strong> Clima perfecto, menos turistas. <strong>Verano:</strong> Ideal para playas pero muy concurrido.</p>
+            </div>
+            <div class="card">
+                <h3>⚠️ Consejos Importantes</h3>
+                <ul>
+                    <li>Moneda: Euro (€) - Lleva efectivo</li>
+                    <li>Usa protector solar de alta protección</li>
+                    <li>Calzado cómodo para ruinas antiguas</li>
+                    <li>Viste modestamente en monasterios</li>
+                    <li>No tires papel al inodoro, usa papelera</li>
+                    <li>Ferries para moverse entre islas</li>
+                    <li>WiFi gratuito en hoteles y cafés</li>
+                </ul>
+            </div>
+
+            <h2 id="planifica">Planifica tu Viaje</h2>
+            <div class="interactive">
+                <h2 style="border:none;margin-top:0">🗺️ ¿Qué ciudad quieres visitar?</h2>
+                <p>Escribe el nombre de una ciudad griega</p>
+                <input type="text" id="city" placeholder="Ej: Atenas, Santorini, Mykonos...">
+                <br>
+                <button onclick="update()">Explorar</button>
+                <button onclick="clear()">Limpiar</button>
+                <div id="display"></div>
+            </div>
+
+            <div class="links">
+                <h2 style="border:none;margin-top:0">🔗 Recursos Útiles</h2>
+                <a href="https://www.visitgreece.gr/" target="_blank" rel="noopener noreferrer" title="Sitio oficial de turismo de Grecia" class="ext-link">🇬🇷 Visit Greece</a>
+                <a href="https://whc.unesco.org/en/statesparties/gr" target="_blank" rel="noopener noreferrer" title="Sitios UNESCO en Grecia" class="ext-link">🏛️ UNESCO</a>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2024 - Descubre Grecia</p>
+            <p>Καλό ταξίδι! (¡Buen viaje!)</p>
+            <p style="margin-top:15px;font-size:.9em">Licencia: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a> | Estética: <a href="https://elpais.com/especiales/2019/cumbre-del-clima/" target="_blank">El País</a></p>
+        </footer>
+    </div>
+
+    <script>
+        // JS 1: Intercambio de imágenes
+        function toggle(img,u1,u2){img.src=img.src.includes(u1.split('?')[0].split('/').pop().split('-')[0])?u2:u1}
+        
+        // JS 2: Campo de texto interactivo
+        function update(){
+            const i=document.getElementById('city').value.trim(),d=document.getElementById('display');
+            if(!i){d.innerHTML='⚠️ Escribe una ciudad';d.style.color='#d32f2f';return}
+            const c=i.toLowerCase();
+            let m=c.includes('aten')?`🏛️ ¡${i}! No olvides la Acrópolis`:c.includes('santorin')?`🌅 ¡${i}! Mejores puestas de sol`:c.includes('mykonos')?`🎉 ¡${i}! Vida nocturna increíble`:c.includes('creta')?`🏖️ ¡${i}! Isla más grande`:c.includes('rodas')?`🏰 ¡${i}! Casco medieval`:`✈️ ¡${i} será inolvidable!`;
+            d.innerHTML=m;d.style.color='#1976d2';
+        }
+        function clear(){document.getElementById('city').value='';document.getElementById('display').innerHTML=''}
+        document.getElementById('city').addEventListener('keypress',e=>{if(e.key==='Enter')update()});
+        
+        // JS 3: Barco animado interactivo
+        const boat=document.querySelector('.boat');
+        boat.addEventListener('click',function(){this.style.animation='none';setTimeout(()=>this.style.animation='sail 15s linear infinite',10)});
+        boat.addEventListener('mouseenter',()=>boat.style.animationPlayState='paused');
+        boat.addEventListener('mouseleave',()=>boat.style.animationPlayState='running');
+        
+        // Smooth scroll
+        document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth'})}));
+    </script>
 </body>
 </html>
