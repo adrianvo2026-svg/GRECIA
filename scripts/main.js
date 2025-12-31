@@ -1,8 +1,3 @@
-// scripts/main.js
-
-// ============================================
-// RECURSO JS 1: Intercambio de imágenes
-// ============================================
 function toggle(img, u1, u2) {
     if (img.src.includes(u1.split('?')[0].split('/').pop().split('-')[0])) {
         img.src = u2;
@@ -11,9 +6,6 @@ function toggle(img, u1, u2) {
     }
 }
 
-// ============================================
-// RECURSO JS 2: Campo de texto interactivo
-// ============================================
 function update() {
     const i = document.getElementById('city').value.trim();
     const d = document.getElementById('display');
@@ -50,31 +42,21 @@ function clear() {
     document.getElementById('display').innerHTML = '';
 }
 
-// Permitir presionar Enter en el input
 document.getElementById('city').addEventListener('keypress', e => {
     if (e.key === 'Enter') update();
 });
 
-// ============================================
-// RECURSO JS 3: Barco animado interactivo
-// ============================================
 const boat = document.querySelector('.boat');
 
-// Reiniciar animación al hacer clic
 boat.addEventListener('click', function() {
     this.style.animation = 'none';
     setTimeout(() => this.style.animation = 'sail 15s linear infinite', 10);
 });
 
-// Pausar animación al pasar el mouse
 boat.addEventListener('mouseenter', () => boat.style.animationPlayState = 'paused');
 
-// Reanudar animación al quitar el mouse
 boat.addEventListener('mouseleave', () => boat.style.animationPlayState = 'running');
 
-// ============================================
-// EXTRA: Smooth scroll para navegación
-// ============================================
 document.querySelectorAll('nav a').forEach(a => {
     a.addEventListener('click', e => {
         e.preventDefault();
