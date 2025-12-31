@@ -4,7 +4,7 @@ Esta actividad me permitió combinar habilidades de diseño web con la gestión 
 
 Mi sitio web resultante puede visitarse en el siguiente enlace:    
     <a href="https://adrianvo2026-svg.github.io/GRECIA/" target="_blank" rel="noopener noreferrer" title="https://adrianvo2026-svg.github.io/GRECIA/">https://adrianvo2026-svg.github.io/GRECIA/</a>
-    
+<p>   
     <a href="https://adrianvo2026-svg.github.io/GRECIA/" target="_blank" rel="noopener noreferrer" title="Visitar mi página web sobre Grecia">Visitar mi página sobre Grecia</a>
 </p>
 <p>
